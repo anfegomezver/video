@@ -1,0 +1,225 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="bg-slate-100">
+    <div class="bg-white h-16 flex items-center">
+      <header class="flex justify-between container max-w-6xl mx-auto">
+        <h1>
+          <span class="font-bold text-blue-600">H. </span><span>Phone</span>
+        </h1>
+        <menu>
+          <ul class="space-x-5">
+            <li class="inline">
+              <a
+                class="hover:text-blue-600 hover:border-b-2 hover:border-dotted hover:border-blue-600 transition-colors duration-300"
+                href="#">Home</a
+              >
+            </li>
+            <li class="inline">
+              <a
+                class="hover:text-blue-600 hover:border-b-2 hover:border-dotted hover:border-blue-600 transition-colors duration-300"
+                href="#">Shop</a
+              >
+            </li>
+            <li class="inline">
+              <a
+                class="hover:text-blue-600 hover:border-b-2 hover:border-dotted hover:border-blue-600 transition-colors duration-300"
+                href="#">Product</a
+              >
+            </li>
+            <li class="inline">
+              <a
+                class="hover:text-blue-600 hover:border-b-2 hover:border-dotted hover:border-blue-600 transition-colors duration-300"
+                href="#">Blog</a
+              >
+            </li>
+            <li class="inline">
+              <a
+                class="hover:text-blue-600 hover:border-b-2 hover:border-dotted hover:border-blue-600 transition-colors duration-300"
+                href="#">Contact</a
+              >
+            </li>
+          </ul>
+        </menu>
+        <div class="flex space-x-4">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+              ></path>
+            </svg></a
+          >
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              ></path>
+            </svg>
+          </a>
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </header>
+    </div>
+    <div
+      class="bg-white rounded-xl shadow-md shadow-slate-200 mt-6 max-w-6xl container mx-auto p-5"
+    >
+      <div class="grid grid-cols-2 mt-11">
+        <div
+          class="size-64 bg-[url(https://as-images.apple.com/is/MME73_AV2?wid=1000&hei=1000&fmt=jpeg&qlt=95&.v=1632861338000)] bg-[length:140%_140%] bg-center mx-auto"
+        >
+        </div>
+        <div class="">
+          <span
+            class="font-semibold text-sm bg-slate-100 rounded-full px-3 pb-1"
+            >new</span
+          >
+          <h1 class="text-3xl font-semibold mt-2">Apple AirPods</h1>
+          <span
+            class="bg-gradient-to-r from-blue-600 to-blue-400 text-white py-1 px-3 rounded-lg mt-4 inline-block"
+          >
+            3rd Generation
+          </span>
+
+          <div class="flex mt-4">
+            <span class="w-3 rounded-full bg-slate-100 mr-2"></span>
+            <p class="text-gray-600 flex-wrap w-4/5 text-sm">
+              Personalized Spatial Audio with dynamic head tracking places sound
+              all around you
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="shadow-md shadow-slate-100 h-12 flex justify-between items-center px-6"
+      >
+        <div class="text-sm text-gray-400">
+          <span class="text-blue-600 font-semibold">
+            Wireless Earbuds
+          </span><span class=""> with Lighning Case. Spatial Audio </span>
+        </div>
+        <div class="flex space-x-2">
+          <div class="bg-slate-100 p-1 rounded">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 19.5 8.25 12l7.5-7.5"></path>
+            </svg>
+          </div>
+          <div class="bg-slate-100 p-1 rounded">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12 max-w-6xl mx-auto container grid grid-cols-4 gap-6">
+      <div class="bg-white rounded-lg shadow shadow-slate-200 p-6">
+        <div class="size-48 bg-[url('https://tiendasishop.com/media/catalog/product/m/v/mv7n2lz_a_1.jpg')] bg-center bg-[length:100%_100%] mx-auto "></div>
+        <p
+          class="text-blue-600 font-semibold bg-slate-100 text-center py-1 rounded-lg"
+        >
+          texto
+        </p>
+      </div>
+      <div class="bg-white rounded-lg shadow shadow-slate-200 p-6">
+        <div class="size-48 bg-[url('https://tiendasishop.com/media/catalog/product/m/v/mv7n2lz_a_1.jpg')] bg-center bg-[length:100%_100%] mx-auto "></div>
+        <p
+          class="text-blue-600 font-semibold bg-slate-100 text-center py-1 rounded-lg"
+        >
+          texto
+        </p>
+      </div>
+      <div class="bg-white rounded-lg shadow shadow-slate-200 p-6">
+        <div class="size-48 bg-[url('https://tiendasishop.com/media/catalog/product/m/v/mv7n2lz_a_1.jpg')] bg-center bg-[length:100%_100%] mx-auto "></div>
+        <p
+          class="text-blue-600 font-semibold bg-slate-100 text-center py-1 rounded-lg"
+        >
+          texto
+        </p>
+      </div>
+      <div class="bg-white rounded-lg shadow shadow-slate-200 p-6">
+        <div class="size-48 bg-[url('https://tiendasishop.com/media/catalog/product/m/v/mv7n2lz_a_1.jpg')] bg-center bg-[length:100%_100%] mx-auto "></div>
+        <p
+          class="text-blue-600 font-semibold bg-slate-100 text-center py-1 rounded-lg"
+        >
+          texto
+        </p>
+      </div>
+    </div>
+
+	<div class="bg-white h-14 flex items-center mt-7">
+		<footer class="container max-w-6xl mx-auto  ">
+			Apple Inc. 2024</footer> </div>
+
+    <!-- <slot /> -->
+  </body>
+</html>
